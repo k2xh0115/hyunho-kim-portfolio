@@ -1,17 +1,46 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Home | Hyunho Kim">
+  <section class="hero">
+    <h1>Unity / VR / AR / Immersive Content Developer</h1>
+
+    <p>
+      Unity 기반 실감형 콘텐츠, 멀티디스플레이, Lidar 연동, URP, OpenCV/NNCam,
+      현장 트러블슈팅 경험을 정리하는 포트폴리오이자 기술 블로그입니다.
+    </p>
+
+    <div class="tags">
+      <span class="tag">Unity</span>
+      <span class="tag">C#</span>
+      <span class="tag">VR/AR</span>
+      <span class="tag">Multi-Display</span>
+      <span class="tag">Lidar</span>
+      <span class="tag">URP</span>
+      <span class="tag">OpenCV</span>
+      <span class="tag">NNCam</span>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Featured Areas</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Projects</h3>
+        <p class="muted">VR 드론 시뮬레이터, 안전 교육 VR, AR 교육 콘텐츠 등</p>
+      </div>
+
+      <div class="card">
+        <h3>Technical Blog</h3>
+        <p class="muted">멀티디스플레이, Lidar 캘리브레이션, URP/OpenCV 삽질 기록</p>
+      </div>
+
+      <div class="card">
+        <h3>Field Troubleshooting</h3>
+        <p class="muted">현장 세팅, 주사율, 케이블, 디바이스 인식 문제 해결 경험</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
